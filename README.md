@@ -1,3 +1,3 @@
-# Shohno
-https://sergspaceweb.github.io/Shohno/app
+# Shopno
+https://sergspaceweb.github.io/Shopno/app
 
