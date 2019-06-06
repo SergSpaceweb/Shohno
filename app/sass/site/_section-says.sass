@@ -1,0 +1,96 @@
+.says
+  background-color: #f9fbfb
+
+.slider__content-title-mark 
+  font-style: italic
+  font-weight: 400
+  font-size: 0.75em
+  color: #767070
+  text-transform: none
+
+.says__slider
+  .slider__img-wrap
+    width: 42%
+  .slider__content-wrap
+    display: flex
+    align-items: center
+    width: 58%
+    padding: 0
+  .slider__content
+    padding: 90px 80px 60px 80px
+    text-align: center
+    background-color: #eaebed
+  .slider__content-stars
+    span
+      display: inline-block
+      width: 15px
+      height: 15px
+      background: url('../img/says-star.png') no-repeat center
+  .slick-dots
+    width: 42%
+.slick-arrow
+  position: absolute
+  z-index: 2
+  right: 0
+  bottom: -30px
+  width: 53px
+  height: 53px
+  background: #fff url('../img/slick-arrow.svg') no-repeat center
+  border-radius: 4px
+  font-size: 0
+  border: none
+  outline: none
+  cursor: pointer
+  transition: transform 200ms
+  &:hover 
+    background-color: #71f6eb 
+    background-image: url('../img/slick-arrow-hov.svg')
+    cursor: pointer
+  &.slick-prev
+    right: 80px
+  &.slick-next
+    transform: rotate(180deg)
+
+ 
+
+
+/* ================= MEDIA ================= */
+
+/* (992px-1200px) lg desktops */
+@media only screen and (max-width: 1199.98px)
+  .says__slider
+    .slider__img-wrap
+      background-size: 85% auto
+    .slider__content
+      padding: 60px
+
+  /**/
+
+/* (768px-992px) md tablets */
+@media only screen and (max-width: 991.98px)
+  .says__slider
+    .slider__content
+      padding: 30px
+  /**/
+
+/* (576px-768px) sm landscape phones */
+@media only screen and (max-width: 767.98px)
+  .says__slider
+    .slider__img-wrap
+      width: 100%
+      margin-bottom: 10px
+    .slider__content-wrap
+      width: 100%
+    .slick-dots
+      width: 100%
+  .slick-arrow
+    top: 35%
+    &.slick-prev
+      left: 0
+  /**/
+
+/* (320px-576px) xs portrait phones */
+@media only screen and (max-width: 575.98px)
+  .says.section
+    padding-bottom: 60px
+  /**/

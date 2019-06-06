@@ -1,0 +1,108 @@
+.header 
+	padding: 305px 0 195px 0
+	background-color: #eff0f2
+.header__cont
+	position: absolute
+	z-index: 10
+	top: 54px
+	width: 100%
+	padding-top: 10px
+	background-color: #eff0f2
+.header__cont--fixed
+	position: fixed
+	top: 0
+	box-shadow: 0 0 30px 0 rgba(0, 0, 0, 0.2)
+.header__logo
+	float: left
+.header__logo-img
+	width: 113px
+	height: 46px
+.header__nav
+	float: right
+	width: 31px
+	height: 21px
+	margin-top: 15px
+	cursor: pointer
+.header__nav-button
+	position: relative
+	top: 50%
+	transform: translateY(-50%)
+	height: 4px
+	background-color: #606061
+	border-radius: 2px
+	&::before,
+	&::after
+		content: ''
+		position: absolute
+		width: 100% 
+		height: 4px
+		border-radius: 2px
+		background-color: #606061
+	&::before
+		top: 9px
+	&::after
+		top: -9px
+.header__title
+	margin-bottom: 137px
+	text-shadow: 3px 7px 10px rgba(0, 0, 0, .24)
+.header__title-mark 
+	display: inline-block
+	padding: 0 10px
+	background-color: rgba(118,244,234,.5)
+.header__contact
+	text-align: center
+.header__contact-button
+	display: inline-flex
+	flex-direction: column
+	justify-content: center
+	padding: 0.6em 2.5em
+	border: 2px solid #777879
+	border-radius: 3px
+	font-family: $font-montserrat
+	color: #606061
+	font-size: 1.125em
+	line-height: 1.6
+	letter-spacing: 0.12em
+	text-transform: uppercase
+	cursor: pointer
+	transition: transform 200ms
+	&:hover
+		transform: scale(1.05)
+		box-shadow: 0 0 30px 0 rgba(0, 0, 0, 0.2)
+		
+
+
+// -------------------------------------------------------
+  
+
+/* ================= MEDIA ================= */
+
+/* (992px-1200px) lg desktops */
+@media only screen and (max-width: 1199.98px)
+  /**/
+
+/* (768px-992px) md tablets */
+@media only screen and (max-width: 991.98px)
+  /**/
+
+/* (576px-768px) sm landscape phones */
+@media only screen and (max-width: 767.98px)
+	.header 
+		padding: 200px 0 150px 0
+	.header__cont
+		top: 0
+	.header__title
+		font-size: 2.31em
+		margin-bottom: 100px
+  /**/
+
+/* (320px-576px) xs portrait phones */
+@media only screen and (max-width: 575.98px)
+	.header 
+		padding: 100px 0 50px 0
+	.header__title
+		font-size: 1.9em
+		margin-bottom: 50px
+	.header__contact-button
+		font-size: 0.9em
+  /**/

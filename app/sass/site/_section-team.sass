@@ -1,0 +1,126 @@
+.team
+	background-color: #fff
+
+.team__items
+	display: flex
+	flex-wrap: wrap
+	justify-content: space-between
+	
+.team__item	
+	position: relative
+	flex-basis: 32.46%
+	margin-bottom: 1.3%
+	cursor: pointer
+	transition: transform 200ms
+	&:hover
+		transform: scale(1.02)
+		box-shadow: 0 0 30px 0 rgba(0, 0, 0, 0.2)
+
+
+.team__img
+	position: relative
+	display: block
+	width: 100%
+
+.team__item-name 
+	display: none
+	position: absolute
+	left: 3%
+	right: 3%
+	bottom: 3%
+	padding: 10% 14% 10% 10%
+	background-color: rgba(111, 246, 235, 1)
+	transition: 200ms
+	cursor: default
+	&::before
+		content: ''
+		position: absolute
+		top: -20px
+		left: 20px
+		width: 0
+		height: 0
+		border-style: solid
+		border-width: 0 11px 20px 11px
+		border-color: transparent transparent rgba(111, 246, 235, 1) transparent
+
+.team__item-title
+	font-family: $font-merriweather
+	font-size: 1.25em
+	letter-spacing: 0.05em
+	text-transform: uppercase
+	font-weight: 700
+
+.team__item-title-mark
+	font-style: italic
+	font-weight: 400
+	font-size: 0.75em
+	color: #767070 
+	text-transform: none
+
+.team__item-text
+	line-height: 1.5
+	
+.team__item-social, .social-links
+	font-family: $fontello
+	a 
+		margin-right: 5px
+	a:hover 
+		&::before
+			transform: scale(1.2)
+			transition: 200ms
+			color: black
+	a::before
+		text-align: center
+		display: inline-block
+		color: rgba(0, 0, 0, .7)
+.social-fb::before	
+	content: '\f09a'
+.social-tw::before	
+	content: '\f099'
+.social-dr::before	
+	content: '\f31b'
+.social-ml::before	
+	content: '\e800'
+.social-pn::before	
+	content: '\f231'
+
+
+
+
+/* ================= MEDIA ================= */
+
+/* (992px-1200px) lg desktops */
+@media only screen and (max-width: 1199.98px)
+	.team__item-name
+		padding: 7%
+  /**/
+
+/* (768px-992px) md tablets */
+@media only screen and (max-width: 991.98px)
+	.team__item-name
+		padding: 7%
+		background-color: rgba(111, 246, 235, .7)
+		&::before
+			border-color: transparent transparent rgba(111, 246, 235, .7) transparent
+  /**/
+
+/* (576px-768px) sm landscape phones */
+@media only screen and (max-width: 767.98px)
+	.team__item	
+		flex-basis: 49%
+		margin-bottom: 2%
+	.team__item-title
+		font-size: 1em
+  /**/
+
+/* (320px-576px) xs portrait phones */
+@media only screen and (max-width: 575.98px)
+	.team__item	
+		flex-basis: 100%
+		margin-bottom: 2%
+	.team__item-social
+		font-size: 1.5em
+		text-align: center
+		a 
+			margin-right: 15px
+  /**/

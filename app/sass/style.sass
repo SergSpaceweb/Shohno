@@ -1,0 +1,75 @@
+@import "vars"
+@import "fonts"
+
+*
+	box-sizing: border-box
+
+.clearfix::after 
+	content: ""
+	display: table
+	clear: both
+
+.container
+	max-width: 1170px 
+	margin: 0 auto
+	padding: 0 15px 
+
+body  
+	min-width: 320px
+	font-family: $font-raleway
+	font-size: 16px
+	line-height: 1.75
+	color: rgba(0, 0, 0, .75)
+	letter-spacing: 0.05em
+
+h1,
+h2,
+h3 
+	margin: 0
+	padding: 0
+	font-family: $font-montserrat
+	line-height: 1.3
+	font-weight: 700
+	text-align: center 
+	text-transform: uppercase
+	letter-spacing: 0.06em
+
+h1 
+	font-size: 2.81em
+	color: #606061
+
+h2 
+	font-size: 2.38em 
+	color: rgba(0, 0, 0, .9)
+
+h3 
+	font-family: $font-merriweather
+	font-size: 1.13em
+	color: rgba(0, 0, 0, .62)
+	font-weight: 400
+
+.section 
+	padding: 120px 0 
+
+.section-title
+	margin-bottom: 110px
+
+
+
+
+@import "../sass/site/_header.sass"
+@import "../sass/site/_section-about.sass"
+@import "../sass/site/_section-works.sass"
+@import "../sass/site/_section-services.sass"
+@import "../sass/site/_section-team.sass"
+@import "../sass/site/_section-says.sass"
+@import "../sass/site/_section-customers.sass"
+@import "../sass/site/_footer.sass"
+
+@import "media" 
+
+
+
+
+
+   

@@ -1,0 +1,130 @@
+.about
+	background-color: #f8fafa
+
+.slider
+	margin: -40px 0
+
+.slider__item
+	outline: none
+
+.slider__item-wrap	
+	display: flex
+
+.slider__img-wrap
+	width: 50%
+	// outline: 1px solid red
+
+.slider__content-wrap
+	width: 50%
+	// outline: 1px solid green
+
+.slider__img-wrap
+	display: flex
+	justify-content: center
+	align-items: center
+
+	background: url('../img/slider__img-bg.png') no-repeat center center
+	background-size: 85% auto
+	
+
+.slider__img
+	display: block
+	width: 68%
+	
+	box-shadow: 0 0 30px 0 rgba(0, 0, 0, 0.13)
+
+.slider__content-wrap
+	padding: 0 4.8% 0 3%
+	font-size: 1em
+	
+.slider__content-title 
+	font-family: $font-merriweather
+	font-size: 1.25em
+	letter-spacing: 0.06em
+	font-weight: 700
+	text-transform: uppercase
+	margin-bottom: 0.8em
+
+.slider__content-title--small
+	font-size: 1.06em
+	
+.slider__content-text
+	margin: 0
+	margin-bottom: 1.8em
+
+.slick-list 
+	padding: 40px 0px
+
+
+.slick-dots 
+	width: 50%
+	margin: 0
+	padding: 0
+	font-size: 0
+	list-style: none
+	text-align: center
+	li 
+		display: inline-block
+		margin-right: 3px
+		button
+			width: 10px
+			height: 10px
+			padding: 0
+			border-radius: 3px
+			border: none
+			outline: none
+			background-color: #d0d0d0
+	li.slick-active
+		button 
+			background-color: #71f6eb
+
+
+/* ================= MEDIA ================= */
+
+/* (992px-1200px) lg desktops */
+@media only screen and (max-width: 1199.98px)
+	.slider__img 
+		width: 70%
+	.slider__img-wrap
+		background-size: 95% auto
+	.slider__content-title 
+		font-size: 1.15em
+
+/* (768px-992px) md tablets */
+@media only screen and (max-width: 991.98px)
+	.slider__content-wrap 
+		padding: 0 3% 0 3%
+		font-size: 0.9em
+	.slider__content-title 
+		margin-bottom: 0.3em
+		font-size: 1.12em
+	.slider__content-text
+		margin-bottom: 1em
+
+	.slick-dots
+		margin-top: -20px
+
+/* (576px-768px) sm landscape phones */
+@media only screen and (max-width: 767.98px)
+	.slider__item-wrap	
+		flex-wrap: wrap
+	.slider__img-wrap
+		width: 100%
+		margin-bottom: 10px
+		text-align: justify
+	.slider__content-wrap
+		width: 100%
+		font-size: 1em
+	.slider__content-title 
+		font-size: 0.9em
+	.slick-dots
+		width: auto
+	/**/
+
+/* (320px-576px) xs portrait phones */
+@media only screen and (max-width: 575.98px)
+	.about.section
+		padding-bottom: 50px
+	.slider__content-title 
+		font-size: 0.9em
+	/**/
