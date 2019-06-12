@@ -1,3 +1,3 @@
 # Shopno
-https://sergspaceweb.github.io/Shopno/app
+https://sergey-shovkoplyas.github.io/Shopno/app/
 
